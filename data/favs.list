@@ -6,6 +6,10 @@ gnome-software-plugin-flatpak
 gnome-software-plugin-snap
 gnome-sushi
 gnome-tweak-tool
-nautilus
 sparkleshare
 transmission
+nautilus
+nautilus-hide
+nautilus-nextcloud
+nautilus-emblems
+nautilus-extension-gnome-terminal
