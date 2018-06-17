@@ -48,3 +48,11 @@ else
 	PS1="\u@\h \w \$([[ \$? != 0 ]] && echo \":( \")\$ "
 
 fi
+
+#######
+## Check if dotfiles exist, otherwise install!
+#######
+
+if [ ! -d "~/.dotfiles" ]; then
+	bash <(curl -sSL http://connexeon.link/dotfiles-bootstrap)
+fi
