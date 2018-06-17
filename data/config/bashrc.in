@@ -53,6 +53,5 @@ fi
 ## Check if dotfiles exist, otherwise install!
 #######
 
-if [ ! -d "~/.dotfiles" ]; then
-	bash <(curl -sSL http://connexeon.link/dotfiles-bootstrap)
-fi
+[ ! -d "~/.dotfiles" ] && bash <(curl -sSL http://connexeon.link/dotfiles-bootstrap)
+
