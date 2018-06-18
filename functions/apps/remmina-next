@@ -12,7 +12,7 @@
 # and be sure to 'source' it in the list at the top of that file as well
 
 # Function
-function function_name {
+function install_remmina {
     # Variables
     NAME="Remmina Next"
     PACKAGE=remmina
