@@ -23,7 +23,7 @@ function install_thirdparty {
     echo_message title "Starting installation of ${NAME,,}..."
     import_apps_functions
     # Draw window
-    THIRDPARTY=$(eval `resize` && whiptail \
+    install_thirdparty=$(eval `resize` && whiptail \
             --notags \
             --title "Install $NAME" \
             --menu "\nWhat ${NAME,,} would you like to install?" \
@@ -34,18 +34,25 @@ function install_thirdparty {
             'install_dropbox'       'Dropbox' \
             'install_oracle_java'   'Oracle Java' \
             'install_rvm'           'Ruby Version Manager (RVM)' \
+            'install_docker-ce'  'Docker CE' \
             'install_sublime_text'  'Sublime Text 3' \
             'install_atom'  'Atom' \
             'install_nnn'  'nnn' \
+            'install_ukuu'  'Ubuntu Kernel Update Utility (Ukuu)' \
+            'install_syncthing'  'Syncthing' \
+            'install_syncthing-gtk'  'Syncthing GTK' \
             'install_nextcloud-client'  'NextCloud Client' \
             'install_remmina-next'  'Remmina (next)' \
             'install_google-drive-ocamlfuse'  'FUSE filesystem over Google Drive' \
+            'install_openshot'  'OpenShot' \
+            'install_paper-icon-theme'  'Paper Icon Theme' \
+            'install_papirus-icon-theme'  'Papirus Icon Theme' \
         3>&1 1>&2 2>&3)
 
     # check exit status
     if [ $? = 0 ]; then
-        echo_message header "Starting '$THIRDPARTY' function..."
-        $THIRDPARTY
+        echo_message header "Starting '$install_thirdparty' function..."
+        $install_thirdparty
     else
         # Cancelled
         echo_message info "Installation of ${NAME,,} cancelled."
