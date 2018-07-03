@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Docker CE
+function install_docker-ce {
+    # Variables
+    NAME="Docker CE"
+    KEYSERVER='https://download.docker.com/linux/ubuntu/gpg'
+
+    PACKAGE="docker-ce"
+    REPOSITORY="https://download.docker.com/linux/ubuntu"
+    REPOSITORY_NAME="docker-ce"
+
+    add_apt_repo "$NAME" "$KEYSERVER" \
+        "deb [arch=amd64] $REPOSITORY \
+		$(lsb_release -cs) \
+        edge" \
+        "$REPOSITORY_NAME"
+
+    install_package "$NAME" "$PACKAGE" install_thirdparty
+
+}
+
