@@ -76,7 +76,7 @@ function add_launchpad_ppa() {
 			--yesno "The ${1} PPA repository (${2}) is not present on your system. \n\nWould you like to add it to continue? " 10 64) then
 			# Add repository
 			echo_message info "Adding ${1} PPA repository..."
-			superuser_do "add-apt-repository -y ppa:${2}"
+			superuser_do "add-apt-repository -y ${2}"
 			# Update repository information
 			echo_message info "Refreshing repository information..."
 			superuser_do "apt update -y -qq"
