@@ -26,11 +26,11 @@ mount | grep "$HOME/G-Drive" >/dev/null || google-drive-ocamlfuse "$HOME/G-Drive
 if [ ! -d "$HOME/G-Drive CX" ] ; then
     mkdir -p "$HOME/G-Drive CX"
 fi
-mount | grep "$HOME/~/G-Drive CX" >/dev/null || google-drive-ocamlfuse -label CX "$HOME/G-Drive CX"
+mount | grep "$HOME/G-Drive CX" >/dev/null || google-drive-ocamlfuse -label CX "$HOME/G-Drive CX"
 
 if [ ! -d "$HOME/G-Drive IL" ] ; then
     mkdir -p "$HOME/G-Drive IL"
 fi
-mount | grep "$HOME/~/G-Drive IL" >/dev/null || google-drive-ocamlfuse -label IL "$HOME/G-Drive IL"
+mount | grep "$HOME/G-Drive IL" >/dev/null || google-drive-ocamlfuse -label IL "$HOME/G-Drive IL"
 
 export LC_ALL="en_US.utf8"
