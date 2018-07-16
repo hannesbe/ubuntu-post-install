@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Etcher
+function install_etcher-electron {
+    # Variables
+    NAME="Etcher"
+    # KEYSERVER='https://download.opensuse.org/repositories/home:kozec/xUbuntu_18.04/Release.key'
+
+    PACKAGE="etcher-electron"
+    REPOSITORY="https://dl.bintray.com/resin-io/debian"
+    REPOSITORY_NAME="etcher"
+
+    sudo apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 379CE192D401AB61
+
+    echo_message info 'Updating repository information...'
+    elevate_privilege "apt update -y"
+    echo_message success 'Done.'
+
+    add_apt_repo "$NAME" "$KEYSERVER" \
+        "deb $REPOSITORY /" \
+        "$REPOSITORY_NAME"
+
+    install_package "$NAME" "$PACKAGE" install_thirdparty
+
+}
+

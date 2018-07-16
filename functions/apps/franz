@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Google Franz
+function install_franz {
+    NAME="Franz"
+    PACKAGE=franz_5.0.0-beta.18
+    REMOTE="https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.18"
+    # Download and install remote package
+    install_remote_package "$NAME" $PACKAGE $REMOTE install_thirdparty
+    status=1
+
+}

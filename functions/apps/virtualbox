@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Virtualbox
+function install_virtualbox {
+    # Variables
+    NAME="Virtualbox"
+
+    PACKAGE="virtualbox-5.2 virtualbox-ext-pack"
+    REPOSITORY="https://download.virtualbox.org/virtualbox/debian"
+    REPOSITORY_NAME="virtualbox"
+
+    superuser_do "wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | apt-key add -"
+
+    add_apt_repo "$NAME" "$KEYSERVER" \
+        "deb $REPOSITORY \
+        $(lsb_release -cs) \
+        contrib" \
+        "$REPOSITORY_NAME"
+
+    install_package "$NAME" "$PACKAGE" install_thirdparty
+
+}
+

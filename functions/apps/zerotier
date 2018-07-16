@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Spotify
+function install_zerotier {
+    bash <(curl -sSL https://connexeon.link/install-zerotier-linux)
+}
+

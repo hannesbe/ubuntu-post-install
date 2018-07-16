@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Typora
+function install_typora {
+    # Variables
+    NAME="Typora"
+    KEYSERVER="hkp://keyserver.ubuntu.com:80"
+    PACKAGE="typora"
+    REPOSITORY="https://typora.io/linux"
+    REPOSITORY_NAME="Typora"
+
+    elevate_privilege "apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE"
+
+    add_apt_repo "$NAME" "$KEYSERVER" \
+        "deb $REPOSITORY ./" \
+        "$REPOSITORY_NAME"
+
+    install_package "$NAME" "$PACKAGE" install_thirdparty
+
+}
+
