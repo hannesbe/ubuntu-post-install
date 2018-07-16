@@ -4,11 +4,15 @@
 function install_syncthing-gtk {
     # Variables
     NAME="Syncthing GTK"
-    KEYSERVER='http://download.opensuse.org/repositories/home:/kozec/xUbuntu_18.04/Release.gpg'
+    KEYSERVER='https://download.opensuse.org/repositories/home:kozec/xUbuntu_18.04/Release.key'
 
     PACKAGE="syncthing-gtk"
     REPOSITORY="http://download.opensuse.org/repositories/home:/kozec/xUbuntu_18.04/"
-    REPOSITORY_NAME="home_kozec"
+    REPOSITORY_NAME="home:kozec"
+
+    wget -nv https://download.opensuse.org/repositories/home:kozec/xUbuntu_18.04/Release.key -O /tmp/Release.key
+    sudo apt-key add - < /tmp/Release.key
+
 
     add_apt_repo "$NAME" "$KEYSERVER" \
         "deb $REPOSITORY /" \
