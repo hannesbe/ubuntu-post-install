@@ -17,6 +17,7 @@ function install_package() {
             # Install
             echo_message info "Installing package '${2}'..."
             # Admin privileges
+            superuser_do "apt update -y"
             superuser_do "apt install -y ${2}"
             # Finished
             echo_message success "Installation of package '${2}' is complete."
