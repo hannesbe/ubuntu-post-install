@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Syncthing GTK
-function install_syncthing-gtk {
+function install_syncthing_gtk {
     # Variables
     NAME="Syncthing GTK"
     KEYSERVER='https://download.opensuse.org/repositories/home:kozec/xUbuntu_18.04/Release.key'

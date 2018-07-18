@@ -12,7 +12,7 @@
 # and be sure to 'source' it in the list at the top of that file as well
 
 # Function
-function install_nextcloud-client {
+function install_nextcloud_client {
     # Variables
     NAME="NextCloud"
     PACKAGE=nextcloud-client

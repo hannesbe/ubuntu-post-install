@@ -12,7 +12,7 @@
 # and be sure to 'source' it in the list at the top of that file as well
 
 # Function
-function install_paper-icon-theme {
+function install_paper_icon_theme {
     # Variables
     NAME="Paper Icon Theme"
     PACKAGE=paper-icon-theme

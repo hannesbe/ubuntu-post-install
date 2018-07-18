@@ -34,7 +34,7 @@ function install_thirdparty {
             'install_dropbox'       'Dropbox' \
             'install_oracle_java'   'Oracle Java' \
             'install_rvm'           'Ruby Version Manager (RVM)' \
-            'install_docker-ce'  'Docker CE' \
+            'install_docker_ce'  'Docker CE' \
             'install_virtualbox'  'Virtualbox' \
             'install_sublime_text'  'Sublime Text 3' \
             'install_atom'  'Atom' \
@@ -42,8 +42,8 @@ function install_thirdparty {
             'install_nautilus_git'  'Nautilus Git' \
             'install_ukuu'  'Ubuntu Kernel Update Utility (Ukuu)' \
             'install_syncthing'  'Syncthing' \
-            'install_syncthing-gtk'  'Syncthing GTK' \
-            'install_nextcloud-client'  'NextCloud Client' \
+            'install_syncthing_gtk'  'Syncthing GTK' \
+            'install_nextcloud_client'  'NextCloud Client' \
             'install_zerotier'  'ZeroTier One' \
             'install_remmina'  'Remmina (next)' \
             'install_spotify'  'Spotify client' \
@@ -52,8 +52,9 @@ function install_thirdparty {
             'install_openshot'  'OpenShot' \
             'install_franz'  'Franz' \
             'install_etcher-electron'  'Etcher' \
-            'install_paper-icon-theme'  'Paper Icon Theme' \
-            'install_papirus-icon-theme'  'Papirus Icon Theme' \
+            'install_paper_icon_theme'  'Paper Icon Theme' \
+            'install_papirus_icon_theme'  'Papirus Icon Theme' \
+            'install_arc_theme'  'ARC Theme' \
         3>&1 1>&2 2>&3)
 
     # check exit status
