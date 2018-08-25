@@ -3,6 +3,7 @@ dconf-tools
 gnome-disk-utility
 gnome-session
 gnome-software
+packagekit
 gnome-sushi
 gnome-tweak-tool
 libreoffice
