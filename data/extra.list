@@ -1,0 +1,11 @@
+- https://extensions.gnome.org/extension/977/recent-items/
+- bash -c  "$(wget -qO- https://git.io/vQgMr)"
+
+    Usage : Enter Desired Themes Numbers (OPTIONS) Separated By A Blank Space
+            Press ENTER without options to Exit
+    Enter OPTION(S) : 19 37 43 65 79 148
+
+
+- https://github.com/powerline/fonts
+- sudo echo "source /etc/profile.d/apps-bin-path.sh" >> /etc/zsh/zprofile
+- 

@@ -5,17 +5,57 @@ function install_spotify {
     # Variables
     NAME="Spotify client"
     KEYSERVER="hkp://keyserver.ubuntu.com:80"
+    KEYID="931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90"
+
     PACKAGE="spotify-client"
-    REPOSITORY="http://repository.spotify.com"
+    REPOSITORY="deb http://repository.spotify.com stable non-free"
     REPOSITORY_NAME="spotify"
 
-    elevate_privilege "apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0DF731E45CE24F27EEEB1450EFDC8610341D9410"
+    # If package is not installed
+    if [ $(check_package_installed $PACKAGE) != 0 ]; then
+        # Install package
+        echo_message info "$NAME is not installed."
+        echo 'Proceeding'
+        # # Check if key already exists in keyring
+        # KEYCHECK=$(gpg --list-keys | grep -w ${KEYID})
+        # if [ "" == "$KEYCHECK" ]; then
+        #     # Add the repository signing key to be able to verify downloaded packages
+        echo_message info "Adding $NAME signing key to keyring..."
+        # Import Key
+        superuser_do "apt-key adv --keyserver $KEYSERVER --recv-keys $KEYID"
 
-    add_apt_repo "$NAME" "$KEYSERVER" \
-        "deb $REPOSITORY stable non-free" \
-        "$REPOSITORY_NAME"
+        # Done
+        # echo_message success "Installation of '$PACKAGE' complete."
 
-    install_package "$NAME" "$PACKAGE" install_thirdparty
+        # Add repository
+        echo_message info "Adding '$REPOSITORY_NAME' apt repository to 'sources.list.d'..."
+        echo $REPOSITORY | superuser_do tee /etc/apt/sources.list.d/$REPOSITORY_NAME.list
+        # Update repository information
+        echo_message info "Refreshing repository information..."
+        superuser_do "apt update -y -qq"
+        # Done
+        echo_message success "Repository added."
+
+        # else
+        #     echo_message info "$NAME signing key already in keyring."
+        # fi
+        # Install
+        # echo_message info "Installing '$NAME'..."
+        # superuser_do "apt install -y $PACKAGE"
+        # # Finished
+        # echo_message success "$PACKAGE is installation complete."
+        # whiptail --title "Finished" --msgbox "Installation of $NAME complete." 8 56
+
+        install_package "$NAME" "$PACKAGE" install_thirdparty
+
+    else
+        # Show already installed message
+        echo_message info "Package '$PACKAGE' is already installed."
+
+        install_thirdparty
+
+    fi
+
 
 }
 
