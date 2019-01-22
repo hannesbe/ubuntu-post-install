@@ -1,5 +1,7 @@
+android-tools-adb
 autotools-dev
 bzr
+composer
 git
 gtk-3-examples
 gtk-doc-tools
@@ -8,12 +10,13 @@ libgtk-3-dev
 nodejs
 npm
 optipng
-x11-apps
 php
-composer
+python
+python-pip
+python3
+python3-pip
 ruby
 ruby-dev
 rubygems
-python3
-python
 sqlite3
+x11-apps

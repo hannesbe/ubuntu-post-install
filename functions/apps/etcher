@@ -7,14 +7,15 @@ function install_etcher-electron {
     # KEYSERVER='https://download.opensuse.org/repositories/home:kozec/xUbuntu_18.04/Release.key'
 
     PACKAGE="etcher-electron"
-    REPOSITORY="https://dl.bintray.com/resin-io/debian"
-    REPOSITORY_NAME="etcher"
+    REPOSITORY="https://deb.etcher.io"
+    REPOSITORY_NAME="balena-etcher"
 
+    add_apt_repo
     sudo apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 379CE192D401AB61
 
     add_apt_repo "$NAME" "$KEYSERVER" \
         "deb $REPOSITORY /" \
-        "$REPOSITORY_NAME"
+    "$REPOSITORY_NAME"
 
     install_package "$NAME" "$PACKAGE" install_thirdparty
 

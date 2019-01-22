@@ -1,4 +1,8 @@
 curl
+flatpak
+gnome-software-plugin-flatpak
+gnome-software-plugin-snap
+snap
 software-properties-common
 wget
 whiptail

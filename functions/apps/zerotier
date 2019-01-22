@@ -1,7 +1,11 @@
 #!/bin/bash
 
-# Spotify
+# ZeroTier
 function install_zerotier {
-    bash <(curl -sSL https://connexeon.link/install-zerotier-linux)
+    # Variables
+    NAME="ZeroTier"
+    # Install
+    echo_message header 'Begin '$NAME' installation'
+    superuser_do "bash <(curl -sSL https://connexeon.link/install-zerotier-linux)"
 }
 

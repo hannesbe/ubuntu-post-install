@@ -5,7 +5,7 @@ function install_virtualbox {
     # Variables
     NAME="Virtualbox"
 
-    PACKAGE="virtualbox-5.2 virtualbox-ext-pack"
+    PACKAGE="virtualbox-6.0 virtualbox-ext-pack"
     REPOSITORY="https://download.virtualbox.org/virtualbox/debian"
     REPOSITORY_NAME="virtualbox"
 
