@@ -5,13 +5,15 @@ function install_syncthing {
     # Variables
     NAME="Syncthing"
     KEYSERVER='https://syncthing.net/release-key.txt'
-    PACKAGE="syncthing syncthing-inotify"
+    PACKAGE="syncthing"
+    PACKAGE_ADD="syncthing-inotify"
     REPOSITORY="https://apt.syncthing.net"
     REPOSITORY_NAME="syncthing"
 
     add_apt_repo "$NAME" "$KEYSERVER" \
         "deb $REPOSITORY $REPOSITORY_NAME stable" $REPOSITORY_NAME
 
-    install_package "$NAME" "$PACKAGE" install_thirdparty
+    install_package "$NAME" "$PACKAGE"
+    install_package "$NAME" "$PACKAGE_ADD" install_thirdparty
 }
 

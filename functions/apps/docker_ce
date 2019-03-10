@@ -7,6 +7,7 @@ function install_docker_ce {
     KEYSERVER='https://download.docker.com/linux/ubuntu/gpg'
 
     PACKAGE="docker-ce"
+    PACKAGE_ADD="docker-compose"
     REPOSITORY="https://download.docker.com/linux/ubuntu"
     REPOSITORY_NAME="docker-ce"
 
@@ -14,9 +15,9 @@ function install_docker_ce {
 
     add_apt_repo "$NAME" "$KEYSERVER" \
         "deb [arch=amd64] $REPOSITORY $(lsb_release -cs) stable" \
-    "$REPOSITORY_NAME"
+        "$REPOSITORY_NAME"
 
-    install_package "$NAME" "$PACKAGE" install_thirdparty
+    install_package "$NAME" "$PACKAGE"
+    install_package "$NAME" "$PACKAGE_ADD" install_thirdparty
 
 }
-
