@@ -7,9 +7,7 @@ apparmor-profiles-extra
 apparmor-utils 
 aptitude
 autoconf
-autoreconf
 autotrash
-awesome-terminal-fonts
 bcal 
 bluez-tools
 btrfs-tools
@@ -31,7 +29,6 @@ cockpit-storaged
 cockpit-system
 cockpit-tests
 cockpit-ws
-composer
 conky
 dconf-cli
 ddgr 
@@ -55,7 +52,6 @@ ffmpeg
 filezilla
 firefox
 flashplugin-installer
-flatpak
 folder-color
 font-manager
 freerdp
@@ -73,7 +69,6 @@ gettext-dev
 gifsicle
 gimp
 gir1.2-nautilus-3.0
-git
 gksu
 glances
 gnote
@@ -131,7 +126,6 @@ menulibre
 minicom
 minit
 mkchromecast
-mkchromecast-
 mkchromecast-gstreamer 
 mkchromecast-pulseaudio
 mkchromecast-pulseaudio 
@@ -185,14 +179,12 @@ qt5-style-plugins
 qtwayland5-dev-tools
 qtwebkit-opensource-src
 rclone
-redis-server
 remmina
 remmina-plugin-gnome 
 remmina-plugin-rdp
 remmina-plugin-secret
 remmina-plugin-telepathy 
 rsync
-samba
 screen
 seahorse-nautilus
 smbclient
