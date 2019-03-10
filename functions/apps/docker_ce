@@ -10,11 +10,11 @@ function install_docker_ce {
     REPOSITORY="https://download.docker.com/linux/ubuntu"
     REPOSITORY_NAME="docker-ce"
 
+    superuser_do "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -"
+
     add_apt_repo "$NAME" "$KEYSERVER" \
-        "deb [arch=amd64] $REPOSITORY \
-		$(lsb_release -cs) \
-        edge" \
-        "$REPOSITORY_NAME"
+        "deb [arch=amd64] $REPOSITORY $(lsb_release -cs) stable" \
+    "$REPOSITORY_NAME"
 
     install_package "$NAME" "$PACKAGE" install_thirdparty
 

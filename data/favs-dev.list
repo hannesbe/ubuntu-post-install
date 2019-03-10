@@ -1,4 +1,6 @@
 android-tools-adb
+fastboot
+docker-compose
 autotools-dev
 bzr
 composer
