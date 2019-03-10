@@ -16,6 +16,7 @@ function install_papirus_icon_theme {
     # Variables
     NAME="Papirus Icon Theme"
     PACKAGE=papirus-icon-theme
+    PACKAGE_ADD="papirus-folders filezilla-theme-papirus libreoffice-style-papirus"
     PPA=papirus/papirus
     # Install
     echo_message header 'Begin '$NAME' installation'
@@ -36,6 +37,7 @@ function install_papirus_icon_theme {
         # Install
         echo_message info 'Installing '$NAME'...'
         elevate_privilege "apt install -y $PACKAGE"
+        elevate_privilege "apt install -y $PACKAGE_ADD"
         # Done
         echo_message success "Installation of '$PACKAGE' complete."
         whiptail --title "Finished" --msgbox "Installation of $NAME complete." 8 64
