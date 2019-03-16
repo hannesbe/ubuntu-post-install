@@ -91,6 +91,7 @@ imgp
 inetutils-tools
 inetutils-traceroute
 inkscape
+input-utils
 intel-gpu-tools
 inxi
 ipcalc
@@ -105,6 +106,8 @@ libfreerdp-client2
 libfreerdp-plugins-standard
 libfuse-dev
 libglib2.0-dev
+libinput-pad1
+libinput-tools
 libnss3-tools
 libqt5core5
 libqt5core5a
@@ -227,6 +230,11 @@ wmctrl
 woeusb
 x11-utils
 xclip
+xdotool 
 xsel
+xserver-xorg-input-libinput
+xserver-xorg-input-libinput-hwe-18.04
+xserver-xorg-input-mtrack
+xserver-xorg-input-mtrack-hwe-18.04
 y-ppa-manager
 youtube-dl
