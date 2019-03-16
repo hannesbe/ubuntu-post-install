@@ -12,7 +12,6 @@ gnome-dictionary
 gnome-disk-utility
 gnome-documents
 gnome-font-viewer
-gnome-genius
 gnome-gmail
 gnome-icon-theme
 gnome-keyring
@@ -38,15 +37,10 @@ gnome-session-wayland
 gnome-shell-extension-autohidetopbar
 gnome-shell-extension-better-volume
 gnome-shell-extension-caffeine
-gnome-shell-extension-mediaplayer
 gnome-shell-extension-shortcuts
-gnome-shell-extension-top-icons-plus
-gnome-shell-extensions-gpaste
 gnome-software
 gnome-software-common
 gnome-software-dev
-gnome-software-plugin-flatpak
-gnome-software-plugin-snap
 gnome-startup-applications
 gnome-sushi
 gnome-system-log
