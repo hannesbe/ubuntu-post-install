@@ -40,3 +40,6 @@ ruby-dev
 rubygems
 sqlite3
 x11-apps
+samba
+redis-server
+
