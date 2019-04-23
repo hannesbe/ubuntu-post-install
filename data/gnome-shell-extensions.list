@@ -7,7 +7,6 @@ gnome-shell-extension-dashtodock
 gnome-shell-extension-disconnect-wifi
 gnome-shell-extension-gsconnect
 gnome-shell-extension-gsconnect-browsers
-gnome-shell-extension-hard-disk-led
 gnome-shell-extension-hide-activities
 gnome-shell-extension-hide-veth
 gnome-shell-extension-impatience
@@ -19,10 +18,6 @@ gnome-shell-extension-onboard
 gnome-shell-extension-pixelsaver
 gnome-shell-extension-remove-dropdown-arrows
 gnome-shell-extension-shortcuts
-gnome-shell-extension-suspend-button
 gnome-shell-extension-weather
 gnome-shell-extension-workspaces-to-dock
 gnome-shell-extensions
-gnome-shell-extensions-gpaste
-gnome-shell-mailnag
-gnome-shell-timer
