@@ -5,7 +5,7 @@ function install_nautilus_git {
     # Variables
     NAME="Nautilus Git"
     PACKAGE=nautilus-git
-    PPA=ppa:khurshid-alam/nautilus-git
+    PPA=khurshid-alam/nautilus-git
     # Install
     add_launchpad_ppa "$NAME" "$PPA" install_thirdparty
     # check exit status

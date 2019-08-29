@@ -5,7 +5,7 @@ function install_arc_theme {
     # Variables
     NAME="ARC theme"
     PACKAGE=arc-theme
-    PPA=ppa:fossfreedom/arc-gtk-theme-daily
+    PPA=fossfreedom/arc-gtk-theme-daily
 
     # Install
     add_launchpad_ppa "$NAME" "$PPA" install_thirdparty

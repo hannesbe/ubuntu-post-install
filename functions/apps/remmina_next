@@ -16,7 +16,7 @@ function install_remmina {
     # Variables
     NAME="Remmina Next"
     PACKAGE=remmina
-    PPA=ppa:remmina-ppa-team/remmina-next
+    PPA=remmina-ppa-team/remmina-next
     # Install
     echo_message header 'Begin '$NAME' installation'
 

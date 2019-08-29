@@ -2,9 +2,9 @@
 
 function install_ukuu {
     # Variables
-    NAME="Ubuntu Kernel Update Utility (Ukuu)"
+    NAME="Ubuntu Kernel Update Utility (UKUU)"
     PACKAGE=ukuu
-    PPA=ppa:teejee2008/ppa
+    PPA=teejee2008/ppa
     # Install
     echo_message header 'Begin '$NAME' installation'
     add_launchpad_ppa "$NAME" "$PPA" install_thirdparty

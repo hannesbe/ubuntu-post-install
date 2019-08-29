@@ -16,7 +16,7 @@ function install_google_drive_ocamlfuse {
     # Variables
     NAME="FUSE filesystem over Google Drive"
     PACKAGE=google-drive-ocamlfuse
-    PPA=ppa:alessandro-strada/ppa
+    PPA=alessandro-strada/ppa
     # Install
     echo_message header 'Begin '$NAME' installation'
     # Check if package is installed

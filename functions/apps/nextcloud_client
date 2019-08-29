@@ -16,7 +16,7 @@ function install_nextcloud_client {
     # Variables
     NAME="NextCloud"
     PACKAGE=nextcloud-client
-    PPA=ppa:nextcloud-devs/client
+    PPA=nextcloud-devs/client
     # Install
     add_launchpad_ppa "$NAME" "$PPA" install_thirdparty
     # check exit status

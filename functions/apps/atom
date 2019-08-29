@@ -5,7 +5,7 @@ function install_atom {
    # Variables
    NAME="Atom"
    PACKAGE=atom
-   PPA=ppa:webupd8team/atom
+   PPA=webupd8team/atom
 
    # Install
    add_launchpad_ppa "$NAME" "$PPA" install_thirdparty
