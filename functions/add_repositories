@@ -33,7 +33,7 @@ function add_apt_repo() {
 			echo_message info "Addition of '${4}' package repository cancelled."
 			$5
 		fi
-	else 
+	else
 		echo_message info "${1} repository already added."
 	fi
 }
@@ -63,7 +63,7 @@ function add_flatpak_repo() {
 
 # Add Launchpad PPA
 #
-# ${1} = Name 
+# ${1} = Name
 # ${2} = launchpad-user/ppa-name
 
 function add_launchpad_ppa() {
@@ -76,7 +76,7 @@ function add_launchpad_ppa() {
 			--yesno "The ${1} PPA repository (${2}) is not present on your system. \n\nWould you like to add it to continue? " 10 64) then
 			# Add repository
 			echo_message info "Adding ${1} PPA repository..."
-			superuser_do "add-apt-repository -y ${2}"
+			superuser_do "add-apt-repository -y ppa:${2}"
 			# Update repository information
 			echo_message info "Refreshing repository information..."
 			superuser_do "apt update -y -qq"
@@ -88,7 +88,7 @@ function add_launchpad_ppa() {
 			echo_message info "Addition of ${1} PPA repository cancelled."
 			$3
 		fi
-	else 
+	else
 		echo_message info "${1} PPA repository already added."
 	fi
 }
