@@ -1,3 +1,4 @@
+howdoi
 ack
 adb
 adobe-flashplugin
@@ -225,7 +226,7 @@ wmctrl
 woeusb
 x11-utils
 xclip
-xdotool 
+xdotool
 xsel
 xserver-xorg-input-libinput
 xserver-xorg-input-libinput-hwe-18.04
