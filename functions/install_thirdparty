@@ -41,6 +41,7 @@ function install_thirdparty {
             'install_nnn'  'nnn' \
             'install_nautilus_git'  'Nautilus Git' \
             'install_ukuu'  'Ubuntu Kernel Update Utility (Ukuu)' \
+            'install_stacer'  'Stacer' \
             'install_syncthing'  'Syncthing' \
             'install_syncthing_gtk'  'Syncthing GTK' \
             'install_nextcloud_client'  'NextCloud Client' \

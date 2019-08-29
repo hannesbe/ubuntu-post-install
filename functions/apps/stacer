@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# PPA Function Template
+#
+# most of this template is complete, you'll just need to change the three variables and the function name
+#
+#	package_name = the name of the package you'll be installing from the PPA
+#	ppa_url = the url of the PPA in the form user/ppa
+#	app_name = a human readable name of the app you're installing
+#
+# next set the 'function_name' and reference it in the 'install_thirdparty' function in the 'install_thirdparty' function file
+# and be sure to 'source' it in the list at the top of that file as well
+
+# Function
+function install_stacer {
+    # Variables
+    NAME="Stacer"
+    PACKAGE=stacer
+    PPA=oguzhaninan/stacer
+    # Install
+    echo_message header 'Begin '$NAME' installation'
+    # Check if package is installed
+    add_launchpad_ppa "$NAME" "$PPA" install_thirdparty
+    # check exit status
+    if [ $? = 0 ]; then
+        # Install package
+        install_package "$NAME" "$PACKAGE" install_thirdparty
+    else
+        # Cancelled
+        echo_message info "Installation of $NAME cancelled."
+        # return
+        install_thirdparty
+    fi
+}
