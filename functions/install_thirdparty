@@ -39,6 +39,7 @@ function install_thirdparty {
             'install_sublime_text'  'Sublime Text 3' \
             'install_atom'  'Atom' \
             'install_nnn'  'nnn' \
+            'install_slimbookbattery'  'Slimbook Battery' \
             'install_nautilus_git'  'Nautilus Git' \
             'install_ukuu'  'Ubuntu Kernel Update Utility (Ukuu)' \
             'install_stacer'  'Stacer' \
