@@ -4,8 +4,6 @@
 function install_etcher-electron {
     # Variables
     NAME="Etcher"
-    # KEYSERVER='https://download.opensuse.org/repositories/home:kozec/xUbuntu_18.04/Release.key'
-
     PACKAGE="balena-etcher-electron"
     REPOSITORY="https://deb.etcher.io"
     REPOSITORY_NAME="balena-etcher"
@@ -14,9 +12,8 @@ function install_etcher-electron {
 
     add_apt_repo "$NAME" "$KEYSERVER" \
         "deb $REPOSITORY stable etcher" \
-    "$REPOSITORY_NAME"
+        "$REPOSITORY_NAME"
 
     install_package "$NAME" "$PACKAGE" install_thirdparty
-
 }
 
