@@ -1,5 +1,3 @@
-shotwell
-howdoi
 ack
 adb
 adobe-flashplugin
@@ -81,6 +79,7 @@ googler
 gparted
 grc
 grilo-plugins
+grub-customizer
 gthumb
 gtk2-engines
 gtk2-engines-pixbuf
@@ -88,6 +87,7 @@ gtop2
 gvfs-trash
 hard-reboot
 hdiutil
+howdoi
 imgp
 inetutils-tools
 inetutils-traceroute
@@ -188,6 +188,7 @@ remmina-plugin-telepathy
 rsync
 screen
 seahorse-nautilus
+shotwell
 smbclient
 solaar
 solaar-gnome3
