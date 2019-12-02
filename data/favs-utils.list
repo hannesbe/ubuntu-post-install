@@ -16,6 +16,7 @@ cadaver
 calibre
 caribou
 catfish
+chkservice
 cockpit
 cockpit-bridge
 cockpit-dashboard
@@ -53,6 +54,7 @@ firefox
 flashplugin-installer
 folder-color
 font-manager
+fonts-roboto
 freerdp
 freerdp2
 freerdp2-wayland
@@ -82,6 +84,8 @@ grilo-plugins
 grub-customizer
 gthumb
 gtk2-engines
+gtk2-engines-murrine
+gtk2-engines-pixbuf
 gtk2-engines-pixbuf
 gtop2
 gvfs-trash
@@ -113,6 +117,7 @@ libqt5core5
 libqt5core5a
 libqt5webkit5
 libqtwebkit5
+libsdl2-2.0.0 
 libusb-1.0-0-dev
 libva-utils
 libvirt-clients
@@ -186,6 +191,7 @@ remmina-plugin-rdp
 remmina-plugin-secret
 remmina-plugin-telepathy
 rsync
+sassc
 screen
 seahorse-nautilus
 shotwell
