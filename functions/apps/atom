@@ -8,9 +8,8 @@ function install_atom {
    PPA=webupd8team/atom
 
    superuser_do "curl -L https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -"
-sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
-sudo apt update
-
+   superuser_do "sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'"
+   superuser_do "apt update"
 
    # Install
    add_launchpad_ppa "$NAME" "$PPA" install_thirdparty

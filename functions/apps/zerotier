@@ -6,6 +6,8 @@ function install_zerotier {
     NAME="ZeroTier"
     # Install
     echo_message header 'Begin '$NAME' installation'
-    superuser_do "bash <(curl -sSL https://connexeon.link/install-zerotier-linux)"
-}
+    # superuser_do "curl -sSL https://connexeon.link/install-zerotier-linux | bash -s"
+    sudo curl -sSL https://connexeon.link/install-zerotier-linux | bash -s
 
+    install_thirdparty
+}
