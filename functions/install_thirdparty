@@ -50,6 +50,7 @@ function install_thirdparty {
             'install_remmina'  'Remmina (next)' \
             'install_spotify'  'Spotify client' \
             'install_typora'  'Typora' \
+            'install_telegram'  'Telegram' \
             'install_google_drive_ocamlfuse'  'FUSE filesystem over Google Drive' \
             'install_openshot'  'OpenShot' \
             'install_franz'  'Franz' \
