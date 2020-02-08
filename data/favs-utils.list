@@ -1,8 +1,5 @@
 ack
 adb
-adobe-flashplugin
-adobe-source-code-pro-fonts
-adobereader-enu
 apparmor-profiles-extra
 apparmor-utils
 aptitude
@@ -87,7 +84,6 @@ gthumb
 gtk2-engines
 gtk2-engines-murrine
 gtk2-engines-pixbuf
-gtk2-engines-pixbuf
 gtop2
 gvfs-trash
 hard-reboot
@@ -106,7 +102,8 @@ libcups2-dev
 libcupsfilters-dev
 libcupsimage2-dev
 libcurl3
-libfolks-dev libfolks-eds25
+libfolks-dev
+libfolks-eds25
 libfreerdp-client2
 libfreerdp-plugins-standard
 libfuse-dev
@@ -118,7 +115,7 @@ libqt5core5
 libqt5core5a
 libqt5webkit5
 libqtwebkit5
-libsdl2-2.0.0 
+libsdl2-2.0.0
 libusb-1.0-0-dev
 libva-utils
 libvirt-clients

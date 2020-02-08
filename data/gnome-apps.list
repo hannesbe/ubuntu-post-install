@@ -1,8 +1,4 @@
-gnome-disk-utility
-gnome-session
-gnome-software
-gnome-sushi
-gnome-tweak-tool
+vanilla-gnome-desktop
 epiphany-browser
 gedit
 gnome-bluetooth
@@ -36,6 +32,7 @@ gnome-remote-desktop
 gnome-screensaver
 gnome-screensaver-flags
 gnome-screenshot
+gnome-session
 gnome-session-bin
 gnome-session-canberra
 gnome-session-wayland
@@ -44,7 +41,7 @@ gnome-shell-extension-better-volume
 gnome-shell-extension-caffeine
 gnome-shell-extension-shortcuts
 gnome-software
-gnome-software-common
+agnome-software-common
 gnome-software-dev
 gnome-startup-applications
 gnome-sushi

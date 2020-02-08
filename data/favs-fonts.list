@@ -6,6 +6,7 @@ fonts-firacode
 fonts-font-awesome
 fonts-hack-ttf
 fonts-inconsolata
+fonts-inter
 fonts-lato
 fonts-noto
 fonts-powerline
@@ -13,4 +14,3 @@ fonts-roboto
 fonts-roboto-fontface
 fonts-ubuntu-font-family-console
 ttf-ubuntu-font-family
-fonts-inter

@@ -3,6 +3,8 @@ autotools-dev
 build-essential
 bzr
 composer
+default-jdk
+default-jre
 docker-compose
 fastboot
 git
@@ -20,15 +22,11 @@ nodejs
 npm
 optipng
 php
-php 
 pkg-config
 PyQt5
 python
-python 
-python python3
 python_setuptools
 python-nautilus
-python-nautilus 
 python-pip
 python-pychromecast
 python-pycryptodome
@@ -42,7 +40,6 @@ python3-pip
 python3-setuptools
 redis-server
 ruby
-ruby 
 ruby-dev
 rubygems
 samba
