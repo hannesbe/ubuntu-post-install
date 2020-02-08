@@ -4,17 +4,17 @@
 function install_virtualbox {
     # Variables
     NAME="Virtualbox"
-    PACKAGE="virtualbox-dkms"
+    PACKAGE="virtualbox-6.1"
     REPOSITORY="deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib"
     REPOSITORY_NAME="virtualbox"
     
     # Check latest version: https://download.virtualbox.org/virtualbox/LATEST.TXT
-    EXTPACK_URL="https://download.virtualbox.org/virtualbox/6.0.12/"
-    EXTPACK="Oracle_VM_VirtualBox_Extension_Pack-6.0.12.vbox-extpack"
+    EXTPACK_URL="https://download.virtualbox.org/virtualbox/6.1.2/"
+    EXTPACK="Oracle_VM_VirtualBox_Extension_Pack-6.1.2.vbox-extpack"
 
     # Keys-
-    superuser_do "wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | apt-key add -"
-    superuser_do "wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | apt-key add -"
+    superuser_do "sudo wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -"
+    superuser_do "sudo wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -"
     add_apt_repo "$NAME" "" \
         "$REPOSITORY" \
         "$REPOSITORY_NAME"

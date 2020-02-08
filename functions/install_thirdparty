@@ -34,7 +34,6 @@ function install_thirdparty {
             'install_atom'  'Atom' \
             'install_chrome'        'Google Chrome' \
             'install_docker_ce'  'Docker CE' \
-            'install_dropbox'       'Dropbox' \
             'install_etcher-electron'  'Etcher' \
             'install_franz'  'Franz' \
             'install_google_drive_ocamlfuse'  'FUSE filesystem over Google Drive' \
@@ -43,7 +42,6 @@ function install_thirdparty {
             'install_nextcloud_client'  'NextCloud Client' \
             'install_nnn'  'nnn' \
             'install_openshot'  'OpenShot' \
-            'install_oracle_java'   'Oracle Java' \
             'install_paper_icon_theme'  'Paper Icon Theme' \
             'install_papirus_icon_theme'  'Papirus Icon Theme' \
             'install_remmina'  'Remmina (next)' \
@@ -51,7 +49,6 @@ function install_thirdparty {
             'install_slimbookbattery'  'Slimbook Battery' \
             'install_spotify'  'Spotify client' \
             'install_stacer'  'Stacer' \
-            'install_sublime_text'  'Sublime Text 3' \
             'install_syncthing_gtk'  'Syncthing GTK' \
             'install_syncthing'  'Syncthing' \
             'install_telegram'  'Telegram' \
